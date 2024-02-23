@@ -1,1 +1,1 @@
-# ethan-portfolio-starter
+# chinseila-portfolio-starter
