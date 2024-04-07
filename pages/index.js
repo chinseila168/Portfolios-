@@ -29,6 +29,9 @@ const Home = () => {
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
+          <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate='show' exit={}>
+            <ProjectsBtn />
+          </motion.div>
         </div>
       </div>
       {/*image*/}
