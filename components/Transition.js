@@ -20,24 +20,30 @@ const transitionVariants = {
 const Transition = () => {
   return (
     <>
-      <motion.div className='fixed top-0 button-0 right-full w-screen h-screen z-30 bg-[#2e2257]'
-      variants={transitionVariants} 
-      initail='initail' 
-      animate='animate' 
-      exit='exit' 
-      transition={{delay: 0.2, duration: 0.6, ease: 'easeInOut'}}
-      >
-        1
-      </motion.div>
-      <motion.div className='fixed top-0 button-0 right-full w-screen h-screen z-30 bg-[#2e2257]'
-      variants={transitionVariants} 
-      initail='initail' 
-      animate='animate' 
-      exit='exit' 
-      transition={{delay: 0.2, duration: 0.6, ease: 'easeInOut'}}
-      >
-        1
-      </motion.div>
+      <motion.div
+        className="fixed top-0 button-0 right-full w-screen h-screen z-30 bg-[#2e2257]"
+        variants={transitionVariants}
+        initail="initail"
+        animate="animate"
+        exit="exit"
+        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+      ></motion.div>
+      <motion.div
+        className="fixed top-0 button-0 right-full w-screen h-screen z-30 bg-[#3d2e71]"
+        variants={transitionVariants}
+        initail="initail"
+        animate="animate"
+        exit="exit"
+        transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
+      ></motion.div>
+      <motion.div
+        className="fixed top-0 button-0 right-full w-screen h-screen z-30 bg-[#4b3792]"
+        variants={transitionVariants}
+        initail="initail"
+        animate="animate"
+        exit="exit"
+        transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
+      ></motion.div>
     </>
   );
 };
