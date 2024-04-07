@@ -29,7 +29,7 @@ const Home = () => {
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
-          <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate='show' exit={}>
+          <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate='show' exit='hidden'>
             <ProjectsBtn />
           </motion.div>
         </div>
