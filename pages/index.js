@@ -14,22 +14,39 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full ">
+    <div className="bg-primary/60 h-full">
       {/*text*/}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black-10 ">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
-          {/*ttile*/}
-          <h1 className="h1">
-            Tranformation Idea <br /> Into{" "}
+          {/*title*/}
+          <motion.h1
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h1">
             <span className="text-accent">Digital Reaility</span>
-          </h1>
+            Tranformation Idea <br /> Into{" "}
+          </motion.h1>
           {/*subtitle*/}
-          <p className="max-w-sm xl:max-w-xl max-auto xl:max-0 mb-10 xl:mb-16"></p>
+          <motion.p
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-sm xl:max-w-xl max-auto xl:max-0 mb-10 xl:mb-16">
+          </motion.p>
           {/*btn*/}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
-          <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate='show' exit='hidden'>
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex"
+          >
             <ProjectsBtn />
           </motion.div>
         </div>
