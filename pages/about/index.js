@@ -133,7 +133,8 @@ const About = () => {
             return <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max">
               {/* title */}
               <div>{item.title}</div>
-              <div className="hidden md:flex">-</div>
+              <div className="hidden md:flex">
+                -</div>
               <div>{item.stage}</div>
               <div className="flex gap-x-4">
               {/* icon */}
