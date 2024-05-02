@@ -96,6 +96,10 @@ import Circles from '../../components/Circles'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 
+{/* counter */}
+import CountUp from "react-countup";
+
+
 const About = () => {
   const [index, setIndex] = useState(0)
   console.log(index);
@@ -113,7 +117,60 @@ const About = () => {
       <Avatar />
     </motion.div>
     <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-      <div className="flex-1 flex flex-col justify-center">text</div>
+      {/* text */}
+      <div className="flex-1 flex flex-col justify-center">
+          <h2 className="h2">Captivating <span className="text-accent">Stories</span> birth magnificient design.</h2>
+          <p1 className="max-w-[500px] mx:auto xl:max-0 mb-6 xl:mb-12 px-2 xl:px-0">
+          My role in technical support has equipped me with a deep understanding of customer service and problem-solving, 
+          while my time as a business analyst has deepened my expertise in requirements gathering, process improvement, 
+          and stakeholder management. As a product owner, I have successfully led cross-functional teams to deliver innovative products, 
+          ensuring alignment with business goals and customer needs. My experience spans across various methodologies, 
+          including Agile and Scrum, and I am adept at using tools like JIRA, Confluence, 
+          and Google Analytics to enhance product development and user experience.
+          </p1>
+      {/* counter */}
+        <div>
+          <div className="flex flex-1 xl:gap-x-6">
+            {/* experience */}
+            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
+                <CountUp start={0} end={4} duration={5}/> +
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                Years of experience
+              </div>
+            </div>
+            {/* client */}
+            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
+                <CountUp start={0} end={357} duration={5}/> +
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                Satified Clients
+              </div>
+            </div>
+          </div>
+          {/* finished project */}
+          <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
+                <CountUp start={0} end={7} duration={5}/> +
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                Project Completed
+            </div>
+          </div>
+        </div>
+        {/* award and certification */}
+        <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
+                <CountUp start={0} end={5} duration={5}/> +
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                Award and Certification
+          </div>
+        </div>
+      </div>
+      {/* info */}
       <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex) => {
@@ -132,9 +189,8 @@ const About = () => {
           {aboutData[index].info.map((item, itemIndex) => {
             return <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max">
               {/* title */}
-              <div>{item.title}</div>
-              <div className="hidden md:flex">
-                -</div>
+              <div className="font-ligth md-2 md:mb-0 ">{item.title}</div>
+              <div className="hidden md:flex">-</div>
               <div>{item.stage}</div>
               <div className="flex gap-x-4">
               {/* icon */}
