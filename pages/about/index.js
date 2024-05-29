@@ -119,17 +119,33 @@ const About = () => {
     <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
       {/* text */}
       <div className="flex-1 flex flex-col justify-center">
-          <h2 className="h2">Captivating <span className="text-accent">Stories</span> birth magnificient design.</h2>
-          <p1 className="max-w-[500px] mx:auto xl:max-0 mb-6 xl:mb-12 px-2 xl:px-0">
+          <motion.h2
+            variants={fadeIn('right, 0.2')} 
+            initial='hidden' 
+            animate='show' 
+            exit='hidden'
+            className="h2"
+            >
+            Captivating <span className="text-accent">Stories</span> birth magnificient design.
+          </motion.h2>
+          <motion.p1 
+            variants={fadeIn('right, 0.4')} 
+            initial='hidden' 
+            animate='show' 
+            exit='hidden'
+            className="max-w-[500px] mx:auto xl:max-0 mb-6 xl:mb-12 px-2 xl:px-0">
           My role in technical support has equipped me with a deep understanding of customer service and problem-solving, 
           while my time as a business analyst has deepened my expertise in requirements gathering, process improvement, 
           and stakeholder management. As a product owner, I have successfully led cross-functional teams to deliver innovative products, 
-          ensuring alignment with business goals and customer needs. My experience spans across various methodologies, 
-          including Agile and Scrum, and I am adept at using tools like JIRA, Confluence, 
-          and Google Analytics to enhance product development and user experience.
-          </p1>
+          ensuring alignment with business goals and customer needs.
+          </motion.p1>
       {/* counter */}
-        <div>
+        <motion.div 
+          variants={fadeIn('right, 0.6')} 
+          initial='hidden' 
+          animate='show'
+          exit='hidden'
+          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
           <div className="flex flex-1 xl:gap-x-6">
             {/* experience */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
@@ -140,35 +156,34 @@ const About = () => {
                 Years of experience
               </div>
             </div>
-            {/* client */}
+
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
-                <CountUp start={0} end={357} duration={5}/> +
+                <CountUp start={0} end={257} duration={5}/> +
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Satified Clients
+                Saftified Client
               </div>
             </div>
-          </div>
-          {/* finished project */}
-          <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+
+            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
+                <CountUp start={0} end={753} duration={5}/> +
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                Project Finished
+              </div>
+            </div>
+            <div className="relative flex-1">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
                 <CountUp start={0} end={7} duration={5}/> +
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Project Completed
+                Award and Certificate
+              </div>
             </div>
           </div>
-        </div>
-        {/* award and certification */}
-        <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
-                <CountUp start={0} end={5} duration={5}/> +
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Award and Certification
-          </div>
-        </div>
+        </motion.div>
       </div>
       {/* info */}
       <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
