@@ -108,7 +108,7 @@ const About = () => {
       <Circles />
     {/* avatar img */}
     <motion.div 
-      variants={fadeIn('right, 0.2')} 
+      variants={fadeIn('right', 0.2)} 
       initial='hidden' 
       animate='show' 
       exit='hidden' 
@@ -120,7 +120,7 @@ const About = () => {
       {/* text */}
       <div className="flex-1 flex flex-col justify-center">
           <motion.h2
-            variants={fadeIn('right, 0.2')} 
+            variants={fadeIn('right', 0.2)} 
             initial='hidden' 
             animate='show' 
             exit='hidden'
@@ -129,7 +129,7 @@ const About = () => {
             Captivating <span className="text-accent">Stories</span> birth magnificient design.
           </motion.h2>
           <motion.p1 
-            variants={fadeIn('right, 0.4')} 
+            variants={fadeIn('right', 0.4)} 
             initial='hidden' 
             animate='show' 
             exit='hidden'
@@ -141,7 +141,7 @@ const About = () => {
           </motion.p1>
       {/* counter */}
         <motion.div 
-          variants={fadeIn('right, 0.6')} 
+          variants={fadeIn('right', 0.6)} 
           initial='hidden' 
           animate='show'
           exit='hidden'
@@ -186,7 +186,12 @@ const About = () => {
         </motion.div>
       </div>
       {/* info */}
-      <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+      <motion.div 
+          variants={fadeIn('left', 0.4)} 
+          initial='hidden' 
+          animate='show'
+          exit='hidden'
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex) => {
             return (
@@ -218,7 +223,7 @@ const About = () => {
             </div>
           })}
         </div>
-      </div>
+      </motion.div>
     </div>
   </div>
   );

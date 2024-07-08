@@ -26,7 +26,7 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Product Owner <br /> Quality Assurance{" "}
+            Product Owner <br /> Business Partnership{" "}
             <span className="text-accent">
               <br />
               Business Analyst
