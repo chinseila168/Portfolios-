@@ -1,5 +1,5 @@
 //components
-import ServiceSlider from '../../components/ServiceSlider';
+import WorkSlider from '../../components/ServiceSlider';
 import Bulu from '../../components/Circles';
 import Circles from '../../components/Circles';
 
@@ -23,7 +23,7 @@ const Work = () => {
           exit='hidden'
           className='h2 xl:mt-8'
         >
-          My Services <span className='text-accent'>.</span>
+          My Work <span className='text-accent'>.</span>
         </motion.h2>
         <motion.p 
           variants={fadeIn('up', 0.4)} 
@@ -45,7 +45,7 @@ const Work = () => {
           exit='hidden' 
           className='w-full xl:max-w-[65%]'
         > 
-        <ServiceSlider />
+        <WorkSlider />
         </motion.div>
       </div>
     </div>
