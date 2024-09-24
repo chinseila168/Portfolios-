@@ -8,7 +8,7 @@ import {
   RxArrowTopRight,
 } from "react-icons/rx";
 
-// service data
+// service datan
 export const serviceData = [
   {
     icon: <RxCrop />,
