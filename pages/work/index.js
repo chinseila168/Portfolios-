@@ -1,5 +1,5 @@
 //components
-import WorkSlider from '../../components/ServiceSlider';
+import WorkSlider from '../../components/WorkSlider';
 import Bulu from '../../components/Circles';
 import Circles from '../../components/Circles';
 
@@ -53,4 +53,4 @@ const Work = () => {
   </div>;
 };
 
-export default Work;
+export default WorkSlider;

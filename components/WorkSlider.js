@@ -43,7 +43,6 @@ export const workSlider = {
     },
   ],
 };
-
 //import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -53,10 +52,10 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 //import require module
-import { Pagination } from "swiper";
+import { Pagination } from 'swiper';
 
 //icon
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image';
  
 const WorkSlider = () => {
@@ -72,7 +71,7 @@ const WorkSlider = () => {
       {WorkSlider.slides.map((slide, index) => {
         return <SwiperSlide key={index}>
           <div>
-            {slide.images.map((image, index)=> {
+            {workSlide.images.map((image, index)=> {
               return <div>
                 <div>
                   {/* image */}
